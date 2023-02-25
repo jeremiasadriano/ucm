@@ -1,2 +1,2 @@
 # UCM
-Repositório comparttilhado
+Repositório compartilhado
