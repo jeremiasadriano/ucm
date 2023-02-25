@@ -3,7 +3,8 @@
   --navcolor: #343a40;
   --red: #cd3f31;
   --fonte: "Calibri", sans-serif;
-  --section: #e8e9e9e5;
+  --section: #f1f2f2e8;
+  --textoSection: #33373a;
 }
 * {
   margin: 0;
@@ -79,38 +80,59 @@ header .nav-bar nav ul li a {
   font-size: 14px;
   font-weight: normal;
 }
-/* Main */
 
+/* Main */
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+/* Definindo propriedades gerais para as section */
+section {
+  color: var(--textoSection);
+}
+
+/* Section 1 da main */
 section.section1 {
   display: block;
   margin: auto;
-  padding: 40px 190px;
+  width: 60%;
+  height: 29%;
   position: absolute;
   top: 14%;
-  /* border: 2px solid var(--main); */
   background-color: var(--section);
   z-index: 1;
 }
+/* Imagem da UCM */
 section .ucm-icon img {
   display: block;
   margin: auto;
+  width: 130px;
 }
-section .ucm-icon {
-  font-size: small;
-  margin: 6px 0px 6px 0px;
-  border-bottom: 1.4px solid #343a40;
+/* O texto de boas vindas da ucm com hr*/
+section .ucm-icon p {
+  display: block;
+  text-align: center;
+  font-size: 15px;
 }
+
+/* hr */
+section .ucm-icon hr {
+  display: block;
+  margin: 12px auto;
+  background-color: var(--navcolor);
+  height: 1px;
+  border-width: 0;
+  width: 95%;
+}
+/* abbr */
 section .butao-red abbr {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 12px;
+  margin-top: 19px;
 }
 section button {
   display: block;
@@ -129,12 +151,20 @@ section button a {
   text-decoration: none;
   color: white;
 }
+/* A div responsável por todo o conteúdo do site */
+#content {
+  display: block;
+  margin-top: 12px;
+}
+
+/* Section 2  da main*/
 section.noticia {
   display: block;
   position: absolute;
-  top: 49%;
+  top: 44%;
   margin: auto;
-  padding: 60px 158px;
+  width: 60%;
+  height: 20%;
   /* top: 20%; */
   /* border: 2px solid var(--main); */
   background-color: var(--section);
