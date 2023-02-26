@@ -158,6 +158,7 @@ section button a {
   text-decoration: none;
   color: white;
 }
+
 /* A div responsável por todo o conteúdo do site */
 #content {
   display: block;
@@ -192,6 +193,11 @@ section:has(.noticia-texto) p {
   font-size: 14px;
   font-style: italic;
   color: #33373ac4;
+  text-align: justify;
+}
+section:has(.noticia-texto) p a {
+  color: #33373ac4;
+  text-decoration: none;
 }
 section:has(.noticia-texto) img {
   height: 14px;
@@ -252,6 +258,15 @@ footer .nav-footer td ul li {
   padding-top: 4px;
   text-align: justify;
 }
+footer .nav-footer td ul li a {
+  color: white;
+  text-decoration: none;
+  transition: ease-in 0.2s;
+}
+footer .nav-footer td ul li a:hover {
+  color: rgba(0, 183, 255, 0.253);
+}
+
 /* Icons do servico online no footer */
 div:has(.icons) a img {
   background-color: white;
