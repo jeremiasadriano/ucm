@@ -89,8 +89,9 @@ main {
   align-items: center;
 }
 /* Definindo propriedades gerais para as section */
-section {
+:is(section) {
   color: var(--textoSection);
+  background-color: var(--section);
 }
 
 /* Section 1 da main */
@@ -101,7 +102,6 @@ section.section1 {
   height: 29%;
   position: absolute;
   top: 14%;
-  background-color: var(--section);
   z-index: 1;
 }
 /* Imagem da UCM */
@@ -168,7 +168,6 @@ section.noticia {
   height: 20%;
   /* top: 20%; */
   /* border: 2px solid var(--main); */
-  background-color: var(--section);
   z-index: 1;
 }
 /* O h5 da segunda section */
