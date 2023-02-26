@@ -246,3 +246,17 @@ footer .nav-footer td ul li {
   padding-top: 4px;
   text-align: justify;
 }
+/* Icons do servico online no footer */
+div:has(.icons) img {
+  background-color: white;
+  margin: 15px 10px 0px 0px;
+  border-radius: 5px;
+  padding: 3px;
+  z-index: 1 !important;
+  transition: ease-in 0.2s;
+}
+div:has(.icons) img:hover {
+  background-color: rgba(0, 0, 255, 0.418);
+}
+
+/* Icons do endereco no footer */
