@@ -117,8 +117,8 @@ section .ucm-icon p {
   font-size: 15px;
 }
 
-/* hr */
-section .ucm-icon hr {
+/* hr geral, modifica todos os hr's existentes na pagina*/
+hr {
   display: block;
   margin: 12px auto;
   background-color: var(--navcolor);
@@ -138,7 +138,7 @@ section button {
   display: block;
   margin: auto;
   margin-top: 20px;
-  padding: 10px 15px 10px 15px;
+  padding: 10px 15px;
   border: none;
   border-radius: 4px;
   background-color: var(--red);
@@ -155,6 +155,7 @@ section button a {
 #content {
   display: block;
   margin-top: 12px;
+  z-index: 1 !important;
 }
 
 /* Section 2  da main*/
@@ -170,23 +171,24 @@ section.noticia {
   background-color: var(--section);
   z-index: 1;
 }
+/* O h5 da segunda section */
+section.noticia h5 {
+  display: block;
+  font-size: 15px;
+  margin-top: 10px;
+}
 
 /* Footer */
 footer {
   display: block;
   position: absolute;
-  top: 80%;
+  top: 74%;
   width: 100vw;
-  height: 200px;
+  height: 255px;
   margin: auto;
   background-color: var(--azul);
 }
 
-footer {
-  display: flex;
-  flex: 100%;
-  justify-content: center;
-}
 footer .nav-footer nav ul {
   display: flex;
   justify-content: space-around;
@@ -194,7 +196,6 @@ footer .nav-footer nav ul {
   list-style: none;
 }
 footer .nav-footer nav ul li {
-  display: flex;
   color: white;
   text-transform: uppercase;
   font-size: medium;
