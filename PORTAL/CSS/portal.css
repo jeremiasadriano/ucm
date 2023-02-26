@@ -43,6 +43,15 @@ article {
     display: block;
 }
 
+article a {
+    color: #00055C;
+}
+
+a, a:link, a:visited {
+    color: #00055c;
+    text-decoration: none;
+}
+
 div {
     display: block;
 }
@@ -81,18 +90,35 @@ h3 {
 #news p, #msg p {
     font-size: 14px;
 }
-#msg{
+
+#up-right{
     overflow: auto;
-    height:367px;
+    height:317px;
 }
 
-#news{
+#bottom-right{
     overflow-y: hidden;
-    height: 280px;
+    height: 265px;
 }
 
 #news .noticias{
     margin: 1em 0;
+}
+
+#news .noticias p{
+    margin: 0 0 0.5em 0;
+}
+
+#news .data{
+    font-size: 0.75;
+}
+
+#news a{
+    position: relative;
+    background-color: #233d7d;
+    padding: 0.5em;
+    text-decoration: none;
+    color: #fff;
 }
 
 /* Imagens de fundo para a pagina */
