@@ -73,10 +73,12 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  position: sticky;
 }
 
 .header-bottom img {
   align-self: flex-start;
+
 }
 
 .nav-topics {
