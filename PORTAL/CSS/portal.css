@@ -19,6 +19,7 @@ body {
 /* Slideshow */
 [data-component="slideshow"] .slide {
     display: none;
+    overflow: hidden;
 }
 
 [data-component="slideshow"] .slide.active {
