@@ -24,6 +24,15 @@ body {
     border: 0;
     
 }
+section article {
+    position: relative;
+    margin: 0.5em;
+    float: left;
+    padding: 1em;
+    background-color: rgba(255,255,255,0.75);
+    box-shadow: 0 0 0.5em 0 rgb(0 0 0 / 50%);
+    z-index: 1000;
+}
 
 article {
     display: block;
@@ -37,6 +46,12 @@ p {
     margin-inline-end: 0px;
 }
 
+#news, #msg {
+    clear: both;
+    float: right;
+    right: 2em;
+    width: 465px;
+}
 /* Imagens de fundo para a pagina */
 .bg-img{
     position: fixed;
@@ -74,31 +89,46 @@ footer {
 footer #f-left {
     float: left;
     padding: 1em 2%;
+}
+
+footer #f-left p{
     margin: 0;
-    border: 0;
 }
 
 footer #f-right {
     float: right;
     padding: 1em 10%;
+}
+
+footer #f-right p {
     margin: 0;
-    border: 0;
 }
 
 footer #f-center {
+    position: absolute;
+    top: 50%;
+    height: 35%;
+    width: 100%;
     clear: both;
     text-align: center;
     background-color: rgba(255,255,255,0.75);
-    padding-top: 0.3em;
-    padding-bottom: 2em;
-    margin-top: 0.3em;
 }
 
 footer #f-center p{
+    margin-top: 0;
     margin-right: 20%;
+    float: center;
+}
+
+#ucm{
+    position: absolute;
+    right: 34%;
+    top: 30%;
 }
 
 footer .media{
+    display: flex;
     float: left;
-    margin-left: 2.5em;
+    margin-left: 30px;
+    margin-right: -25px;
 }
