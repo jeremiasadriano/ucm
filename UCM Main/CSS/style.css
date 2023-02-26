@@ -1,4 +1,4 @@
-/* Generals configuration*/ 
+/* Generals configuration*/
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Roboto&display=swap");
 
 * {
@@ -78,7 +78,6 @@ header {
 
 .header-bottom img {
   align-self: flex-start;
-
 }
 
 .nav-topics {
@@ -144,7 +143,7 @@ header {
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
-  min-height: 100%;
+  max-height: 900px;
   position: relative;
   margin: auto;
   overflow: hidden;
@@ -199,29 +198,28 @@ header {
   line-height: 1.4;
   word-wrap: break-word;
 }
-.links-slideshow a{
+.links-slideshow a {
   color: #5866de;
   font-size: 20px;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-weight: 300;
-  margin:5px;
+  margin-left: 4px;
 }
 
 .text h1 {
-  margin-top: 20px;
   text-align: center;
   font-family: Poppins;
   font-size: 50px;
   font-weight: 600;
 }
-.text p{
+.text p {
   text-align: center;
   font-size: 20px;
   word-wrap: break-word;
-  margin: 1.5em;
+  margin: 0  1.5em;
 }
 
-.text button{
+.text button {
   background-color: transparent;
   font-size: 15px;
   padding: 12px 30px;

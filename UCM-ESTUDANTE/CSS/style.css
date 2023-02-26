@@ -5,6 +5,8 @@
   --fonte: "Calibri", sans-serif;
   --section: #f1f2f2e8;
   --textoSection: #33373a;
+  --cordoHRdoFooter: rgba(248, 248, 255, 0.425);
+  --hrcolor: rgba(248, 248, 255, 0.205);
 }
 * {
   margin: 0;
@@ -156,6 +158,7 @@ section button a {
   text-decoration: none;
   color: white;
 }
+
 /* A div responsável por todo o conteúdo do site */
 #content {
   display: block;
@@ -190,6 +193,11 @@ section:has(.noticia-texto) p {
   font-size: 14px;
   font-style: italic;
   color: #33373ac4;
+  text-align: justify;
+}
+section:has(.noticia-texto) p a {
+  color: #33373ac4;
+  text-decoration: none;
 }
 section:has(.noticia-texto) img {
   height: 14px;
@@ -222,8 +230,9 @@ footer .nav-footer th {
   padding-left: 50px;
   padding-top: 10px;
 }
+/* Aqui também alteramos a cor servico online text */
 footer .nav-footer td {
-  color: rgba(248, 248, 255, 0.74);
+  color: var(--cordoHRdoFooter);
   font-size: 16px;
   font-weight: 400;
   width: 10%;
@@ -234,6 +243,9 @@ footer .nav-footer th:first-child {
 }
 footer .nav-footer td:first-child {
   padding-left: 10px;
+}
+footer .nav-footer td:last-child {
+  padding-top: 12px;
 }
 
 footer .nav-footer td ul {
@@ -246,8 +258,17 @@ footer .nav-footer td ul li {
   padding-top: 4px;
   text-align: justify;
 }
+footer .nav-footer td ul li a {
+  color: white;
+  text-decoration: none;
+  transition: ease-in 0.2s;
+}
+footer .nav-footer td ul li a:hover {
+  color: rgba(0, 183, 255, 0.253);
+}
+
 /* Icons do servico online no footer */
-div:has(.icons) img {
+div:has(.icons) a img {
   background-color: white;
   margin: 15px 10px 0px 0px;
   border-radius: 5px;
@@ -255,8 +276,23 @@ div:has(.icons) img {
   z-index: 1 !important;
   transition: ease-in 0.2s;
 }
-div:has(.icons) img:hover {
+div:has(.icons) a img:hover {
   background-color: rgba(0, 0, 255, 0.418);
 }
 
-/* Icons do endereco no footer */
+/* hr do footer */
+:is(footer) hr {
+  border-width: 0;
+  background-color: var(--hrcolor);
+  width: 60%;
+  margin: 12px auto 2px auto;
+}
+
+/* Copyright */
+div:has(.copyright) p {
+  display: block;
+  margin: auto;
+  width: 60%;
+  color: var(--cordoHRdoFooter);
+  font-size: 14px;
+}
