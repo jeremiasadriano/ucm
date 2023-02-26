@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
 /* Body */
 html, body {
     font-family: Varela, sans-serif;
@@ -17,7 +25,17 @@ body {
     
 }
 
+article {
+    display: block;
+}
 
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 
 /* Imagens de fundo para a pagina */
 .bg-img{
@@ -41,6 +59,7 @@ body {
 
 /* Footer */
 footer {
+    display: block;
     position: fixed;
     bottom: 0;
     font-size: 12px;
@@ -54,16 +73,32 @@ footer {
 }
 footer #f-left {
     float: left;
+    padding: 1em 2%;
+    margin: 0;
+    border: 0;
 }
 
 footer #f-right {
     float: right;
+    padding: 1em 10%;
+    margin: 0;
+    border: 0;
 }
 
 footer #f-center {
     clear: both;
     text-align: center;
     background-color: rgba(255,255,255,0.75);
-    padding: 0.3em;
+    padding-top: 0.3em;
+    padding-bottom: 2em;
     margin-top: 0.3em;
+}
+
+footer #f-center p{
+    margin-right: 20%;
+}
+
+footer .media{
+    float: left;
+    margin-left: 2.5em;
 }
