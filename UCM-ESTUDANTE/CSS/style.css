@@ -133,6 +133,7 @@ section .butao-red abbr {
   align-items: center;
   font-size: 12px;
   margin-top: 19px;
+  cursor: help;
 }
 section button {
   display: block;
@@ -146,6 +147,10 @@ section button {
   font-size: 15px;
   text-transform: uppercase;
   cursor: pointer;
+  transition: ease-in 0.2s;
+}
+section button:hover {
+  background-color: #b94237;
 }
 section button a {
   text-decoration: none;
@@ -186,7 +191,7 @@ section:has(.noticia-texto) p {
   font-style: italic;
   color: #33373ac4;
 }
-section:has(.noticia-texto) img{
+section:has(.noticia-texto) img {
   height: 14px;
 }
 
@@ -200,16 +205,34 @@ footer {
   margin: auto;
   background-color: var(--azul);
 }
-
-footer .nav-footer nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
+/* Centralizando o footer */
+footer table {
+  display: block;
+  margin: auto;
+  width: 60%;
+  /* border: 3px #b94237 solid; */
 }
-footer .nav-footer nav ul li {
+footer .nav-footer th {
+  font-family: sans-serif;
   color: white;
   text-transform: uppercase;
-  font-size: medium;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 600;
+}
+footer .nav-footer td {
+  color: rgba(248, 248, 255, 0.74);
+  font-size: 16px;
+  font-weight: 400;
+  width: 10%;
+}
+
+footer .nav-footer td ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+footer .nav-footer td ul li {
+  color: white;
+  padding-top: 4px;
+  text-align: justify;
 }
