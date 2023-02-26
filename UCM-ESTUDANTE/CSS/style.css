@@ -201,7 +201,7 @@ footer {
   position: absolute;
   top: 74%;
   width: 100vw;
-  height: 255px;
+  height: 265px;
   margin: auto;
   background-color: var(--azul);
 }
@@ -214,16 +214,26 @@ footer table {
 }
 footer .nav-footer th {
   font-family: sans-serif;
+  text-align: left;
   color: white;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
+  padding-left: 50px;
+  padding-top: 10px;
 }
 footer .nav-footer td {
   color: rgba(248, 248, 255, 0.74);
   font-size: 16px;
   font-weight: 400;
   width: 10%;
+  padding-left: 50px;
+}
+footer .nav-footer th:first-child {
+  padding-left: 10px;
+}
+footer .nav-footer td:first-child {
+  padding-left: 10px;
 }
 
 footer .nav-footer td ul {
