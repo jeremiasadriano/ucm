@@ -5,6 +5,8 @@
   --fonte: "Calibri", sans-serif;
   --section: #f1f2f2e8;
   --textoSection: #33373a;
+  --cordoHRdoFooter: rgba(248, 248, 255, 0.425);
+  --hrcolor: rgba(248, 248, 255, 0.205);
 }
 * {
   margin: 0;
@@ -222,8 +224,9 @@ footer .nav-footer th {
   padding-left: 50px;
   padding-top: 10px;
 }
+/* Aqui também alteramos a cor servico online text */
 footer .nav-footer td {
-  color: rgba(248, 248, 255, 0.74);
+  color: var(--cordoHRdoFooter);
   font-size: 16px;
   font-weight: 400;
   width: 10%;
@@ -234,6 +237,9 @@ footer .nav-footer th:first-child {
 }
 footer .nav-footer td:first-child {
   padding-left: 10px;
+}
+footer .nav-footer td:last-child {
+  padding-top: 12px;
 }
 
 footer .nav-footer td ul {
@@ -247,7 +253,7 @@ footer .nav-footer td ul li {
   text-align: justify;
 }
 /* Icons do servico online no footer */
-div:has(.icons) img {
+div:has(.icons) a img {
   background-color: white;
   margin: 15px 10px 0px 0px;
   border-radius: 5px;
@@ -255,8 +261,23 @@ div:has(.icons) img {
   z-index: 1 !important;
   transition: ease-in 0.2s;
 }
-div:has(.icons) img:hover {
+div:has(.icons) a img:hover {
   background-color: rgba(0, 0, 255, 0.418);
 }
 
-/* Icons do endereco no footer */
+/* hr do footer */
+:is(footer) hr {
+  border-width: 0;
+  background-color: var(--hrcolor);
+  width: 60%;
+  margin: 12px auto 2px auto;
+}
+
+/* Copyright */
+div:has(.copyright) p {
+  display: block;
+  margin: auto;
+  width: 60%;
+  color: var(--cordoHRdoFooter);
+  font-size: 14px;
+}
