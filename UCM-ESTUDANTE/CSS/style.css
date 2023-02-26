@@ -170,11 +170,24 @@ section.noticia {
   /* border: 2px solid var(--main); */
   z-index: 1;
 }
+
 /* O h5 da segunda section */
 section.noticia h5 {
   display: block;
   font-size: 15px;
-  margin-top: 10px;
+  margin: 10px 0px 0px 29px;
+}
+
+/* Alterando os p da section com a class noticia-texto */
+section:has(.noticia-texto) p {
+  display: block;
+  margin: 8px 0px 0px 42px;
+  font-size: 14px;
+  font-style: italic;
+  color: #33373ac4;
+}
+section:has(.noticia-texto) img{
+  height: 14px;
 }
 
 /* Footer */
