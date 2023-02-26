@@ -22,8 +22,8 @@ html, body {
 body {
     display: block;
     border: 0;
-    
 }
+
 section article {
     position: relative;
     margin: 0.5em;
@@ -34,10 +34,17 @@ section article {
     z-index: 1000;
 }
 
+#right {
+    float: right;
+    width: 50%;
+}
+
 article {
     display: block;
 }
-
+div {
+    display: block;
+}
 p {
     display: block;
     margin-block-start: 1em;
@@ -45,12 +52,36 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+h2 {
+    font-size: 1.2em;
+    color: #00055C;
+}
 
 #news, #msg {
     clear: both;
     float: right;
     right: 2em;
-    width: 465px;
+    width: calc(75% - 1em);
+}
+
+#news h2, #msg h2{
+    width: 100%;
+    border-bottom:0.05em solid #00055C;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#news p, #msg p {
+    font-size: 14px;
+}
+#msg{
+    overflow: auto;
+    height:367px;
+}
+
+#news{
+    overflow-y: hidden;
+    height: 280px;
 }
 /* Imagens de fundo para a pagina */
 .bg-img{
