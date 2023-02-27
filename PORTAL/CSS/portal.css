@@ -39,6 +39,12 @@ section article {
     width: 50%;
 }
 
+#left {
+    display: block;
+    float: left;
+    width: 37%;
+}
+
 article {
     display: block;
 }
@@ -47,6 +53,7 @@ article a {
     color: #00055C;
 }
 
+/*laddo direito*/
 a, a:link, a:visited {
     color: #00055c;
     text-decoration: none;
@@ -121,6 +128,67 @@ h3 {
     color: #fff;
 }
 
+/*lado esquerdo*/
+h1 {
+    font-size: 1.2em;
+    float: left;
+    padding: 0;
+    color: #00055C;
+    display: block;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+    margin-bottom: 2.5em;
+}
+
+#login form input{
+    display: block;
+    width: 100%;
+    padding: 0.25em;
+    margin: 0.2em 0;
+    color: #808080;
+    border: 0.15em solid #808080;
+}
+
+#login #lembra{
+    position: relative;
+    right: 45%;
+    width: 100%;
+    text-align: start;
+}
+
+#login {
+    width: calc(36% - 1em);
+    margin-left: 2em;
+}
+ form #entrar {
+    display: block;
+    margin: 0.25em 0;
+    margin-bottom: 0.4em;
+    background-color: #233d7d;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0.5em;
+ }
+
+ #down h2{
+    width: 100%;
+    border-bottom: 0.05em solid #00055C;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+ }
+
+ #entrar-ucm{
+    display: inline-block;
+    margin: 0.3em 0 0.5em 0;
+    background-color: #b22213;
+    cursor: pointer;
+    padding: 0.45em 0.5em;
+    font-size: 1em;
+    width: 58%;
+    color: #fff;
+ }
 /* Imagens de fundo para a pagina */
 .bg-img{
     position: fixed;
