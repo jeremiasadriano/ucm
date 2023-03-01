@@ -189,6 +189,7 @@ h1 {
     width: 58%;
     color: #fff;
  }
+
 /* Imagens de fundo para a pagina */
 .bg-img{
     position: fixed;
@@ -198,7 +199,6 @@ h1 {
     width: 100%;
 }
     
-
 /* Slideshow */
 [data-component="slideshow"] .slide {
     display: none;
