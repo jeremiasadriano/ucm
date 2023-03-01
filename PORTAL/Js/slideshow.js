@@ -7,7 +7,7 @@ var slideshows = document.querySelectorAll('[data-component="slideshow"]');
 
     var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`); // Buscar um array(lista) de imgs para o slide 
 
-    var indice = 0, time = 5000;
+    var indice = 0, time = 3500;
     slides[indice].classList.add('active');  
     
     setInterval( () => {
@@ -22,4 +22,4 @@ var slideshows = document.querySelectorAll('[data-component="slideshow"]');
       slides[indice].classList.add('active');
 
     }, time);
-  }
+  } 
