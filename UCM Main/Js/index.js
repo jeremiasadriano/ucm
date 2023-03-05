@@ -6,18 +6,9 @@ document.getElementById("button2").onclick = function () {
   location.href = "https://esura.ucm.ac.mz/inscricoes/registrationhelp";
 };
 
-/* Open when someone clicks on the span element */
-function openNav() {
-  document.getElementById("myNav").style.width = "90%";
-}
-
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-
-//______CAROUSEL___________
-let slideIndex = 1;
+//SLIDEHOW
+let slideIndex = 0;
+showSlidesAuto();
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -48,4 +39,18 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
+}
+
+function showSlidesAuto() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlidesAuto, 10000); // Change image every 2 seconds
 }
