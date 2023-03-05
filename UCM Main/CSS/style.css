@@ -1,5 +1,6 @@
 /* Generals configuration*/
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 * {
   margin: 0;
@@ -216,7 +217,7 @@ header {
   text-align: center;
   font-size: 20px;
   word-wrap: break-word;
-  margin: 0  1.5em;
+  margin: 0 1.5em;
 }
 
 .text button {
@@ -365,7 +366,203 @@ header {
 /* Investigacao */
 
 /* Biblioteca */
+#biblioteca {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+}
 
+#bibliotecas_horários {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #1b2556;
+}
+
+#bibliotecas_horários > h2 {
+  font-size: 34px;
+  text-transform: uppercase;
+  font-family: "Poppins", Sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+#bibliotecas_horários div {
+  align-self: flex-start;
+  height: auto;
+  width: 50%;
+}
+
+#bibliotecas_horários div h3 {
+  font-family: "Oxygen", Sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 1.1em;
+  margin: 2em 0 1em 0;
+}
+
+#bibliotecas_horários div p:first-child {
+  font-family: "Poppins", Sans-serif;
+  line-height: 1.8;
+  margin: 0 0 20px;
+  word-wrap: break-word;
+}
+
+#bibliotecas_horários div p:last-child {
+  margin: 2em 0;
+  padding-bottom: 4rem;
+  font-size: 0.8rem;
+}
+
+#nossos_serviços {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#mini_title {
+  text-transform: capitalize;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+#mini_title hr {
+  align-self: flex-end;
+  margin: 0 0.5rem 0.3rem 5rem;
+
+  width: 5%;
+  height: 4px;
+  background-color: #1b2556;
+  color: #1b2556;
+}
+#mini_title span {
+  font-size: 18px;
+  color: #1b2556;
+}
+
+#recursos_dispo h2 {
+  font-size: 32px;
+  color: #1b2556;
+  text-transform: capitalize;
+  margin: 1rem 5rem;
+}
+
+#recursos_dispo p {
+  line-height: 1.8;
+  margin: 0 0 0 5rem;
+  text-align: justify;
+  color: #54595f;
+  font-family: "Asap", Sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  text-transform: none;
+  font-style: normal;
+  word-wrap: break-word;
+  width: 40%;
+}
+
+#icon-book {
+  width: 4%;
+  margin: 2rem 20rem;
+}
+
+#lista_books {
+  margin-top: 1rem;
+}
+
+#lista_books li {
+  color: #54595f;
+  font-size: 14px;
+  margin-left: 8rem;
+  margin-bottom: 0.3rem;
+  list-style: disc;
+  word-wrap: break-word;
+  width: 30%;
+}
+
+#biblioteca-digital-btn {
+  margin-top: 2rem;
+  margin-left: 15rem;
+  color: #ffffff;
+  background-color: #333d68;
+  font-family: "Asap", Sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1em;
+  letter-spacing: 1px;
+  fill: #ffffff;
+  background-color: #0d1742;
+  border-radius: 0% 0% 0% 0%;
+  box-shadow: 0px 0px 48px -18px rgba(0, 0, 0, 0.5);
+  padding: 1em 2em 1em 2em;
+  margin-bottom: 2rem;
+}
+
+#imagem-sobreposta-wrapper {
+  position: absolute;
+  right: 8%;
+  top: 23%;
+
+  width: 40%;
+  height: 70%;
+  background-color: #ffffff;
+}
+
+#imagem-sobreposta {
+  position: relative;
+  padding: 4rem 2rem;
+  width: 100%;
+  opacity: 1;
+  filter: brightness(121%) contrast(95%) saturate(126%) blur(0px)
+    hue-rotate(0deg);
+  object-fit: cover;
+}
+
+#link-ahead {
+  position: absolute;
+  top: 84.65%;
+  left: 15%;
+  background-color: #ffffff;
+  display: flex;
+  width: 55%;
+  justify-content: flex-start;
+}
+
+#link-ahead hr {
+  align-self: flex-end;
+  margin: 0 0 0.3rem 1rem;
+  width: 10%;
+  height: 4px;
+  background-color: #1b2556;
+  color: #1b2556;
+}
+#link-ahead p {
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  color: #0d1742;
+  font-size: 1.1rem;
+  padding-top: 2rem;
+  margin-left: 1rem;
+}
+
+#sla {
+  position: absolute;
+  right: 12%;
+  bottom: 8%;
+  background-color: #0d1742;
+  width: 10%;
+  height: 8%;
+  border: none;
+}
+#sla img {
+  padding: 1rem;
+}
 /* Recursos */
 
 /* Eventos */
