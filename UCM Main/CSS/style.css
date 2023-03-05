@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+:root {
+  --azulDaSectionInvestigacao: #151c60;
+}
 * {
   margin: 0;
   padding: 0;
@@ -451,6 +454,86 @@ header {
 }
 
 /* Investigacao */
+section#investigacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 98vh;
+  background-image: url("../img/Investigacao/Untitled.jpeg");
+  background-size: cover;
+  overflow-x: hidden;
+}
+section#investigacao .bg-investigacao {
+  width: 100vw;
+  height: 90vh;
+  /* Essa div é inutil ok? mas não apaguem */
+}
+/* A div de textos que contem todo o conteudo do site */
+:is(section) .textos-investigacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: justify;
+  width: 50%;
+  margin-top: 15%;
+  font-size: 1.4rem;
+}
+:is(section) .textos-investigacao h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+:is(section) .textos-investigacao h3 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-right: 18rem;
+  margin-bottom: 1rem;
+}
+:is(section) .textos-investigacao h1,
+h3 {
+  margin-right: 15rem;
+}
+:is(section) .textos-investigacao p {
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-size: 1.4rem;
+  margin: 0 1.5em;
+}
+:is(section) .imagens-investigacao {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 108%;
+}
+div:has(.imagens-investigacao) img {
+  position: absolute;
+  right: 24%;
+  bottom: -168px;
+  display: flex;
+}
+:is(section) .imagens-investigacao img:first-child {
+  width: 29%;
+}
+:is(section) .imagens-investigacao img:last-child {
+  position: absolute;
+  width: 25%;
+  top: -244px;
+  left: 69%;
+  transform: scale(0.9);
+}
+:is(section) .imagens-investigacao a img {
+  z-index: 2;
+}
+:is(section) button {
+  display: block;
+  margin-top: 3rem;
+  margin-right: 32.1rem;
+  padding: 10px 10px;
+}
 
 /* Biblioteca */
 #biblioteca {
