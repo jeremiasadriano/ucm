@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./img/logo-ucm-ico.png" type="image/x-icon">
-  <link rel="stylesheet" href="./CSS/style.css">
-  <title>ucm</title>
-</head>
-<body>
-  <div class="header">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img/logo-ucm-ico.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>ucm</title>
+  </head>
+  <body>
+    <div class="header">
       <div class="header-top">
         <div class="header-top-info">
-          <img src="./img/circle-info-solid.svg" alt="info-icon" width="15px">
-            <span class="texto-header">
-              A UCM mais perto de ti, agora em Xai-xai. O FUTURO COMEÇA AQUI! 
-            </span>
+          <img src="./img/circle-info-solid.svg" alt="info-icon" width="15px" />
+          <span class="texto-header">
+            A UCM mais perto de ti, agora em Xai-xai. O FUTURO COMEÇA AQUI!
+          </span>
         </div>
         <div class="header-top-buttons">
-          <button>editais</button>
-          <button>inscrições online</button>
+          <button id="button1">editais</button>
+          <button id="button2">inscrições online</button>
         </div>
       </div>
       <div class="header-bottom">
         <div>
-            <img src="./img/logotipo-ucm.png" alt="UCM">
+          <img src="./img/logotipo-ucm.png" alt="UCM" />
         </div>
         <div>
-          <button class="header-menu-center"><img src="./img/header-menu-center .png" alt="" width="100%"></button>
+          <button onclick="openNav()" class="header-menu-center">
+            <img src="./img/header-menu-center .png" alt="" width="100%" />
+          </button>
+          <!-- The overlay -->
+          <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+
+            <!-- Overlay content -->
+            <div class="overlay-content">
+              <a href="#">universidade</a>
+              <a href="#">faculdades</a>
+              <a href="#">ied</a>
+              <a href="#">investigação</a>
+              <a href="#">estudantes</a>
+              <a href="#">notícias</a>
+              <a href="#">Contactos</a>
+            </div>
+          </div>
         </div>
         <div>
           <button class="doar-button">doar</button>
           <button class="menu-hamburguer-right">
-            <img src="./img/header-menu-right.png" alt="" width="100%">
+            <img src="./img/header-menu-right.png" alt="" width="100%" />
           </button>
         </div>
       </div>
-  </div>
-</body>
+    </div>
+
+    <script src="./Js/index.js"></script>
+  </body>
 </html>

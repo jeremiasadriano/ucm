@@ -24,12 +24,14 @@
 }
 /* LATO FONT OFFLINE latin */
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../font/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(../font/S6uyw4BMUTPHjx4wXg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
 * {
@@ -111,7 +113,66 @@ body {
     background-color: #ffffff;
     width: 5em;
   }
-  .header-bottom div:last-child{
+
+  /* The Overlay (background) */
+  .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0); /* Black fallback color */
+    background-color: rgba(255, 255, 255, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+
+  /* Position the content inside the overlay */
+  .overlay-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -27%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+
+  /* The navigation links inside the overlay */
+  .overlay a {
+    text-transform: uppercase;
+    padding: 8px;
+    margin-left: 1.5em;
+    align-self: flex-start;
+    text-decoration: none;
+    color: #000000;
+    font-family: "Lato", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+ 
+
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover,
+  .overlay a:focus {
+    color: black;
+  }
+
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    border: 1px solid gray;
+    border-radius: 2px;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+  }
+
+  .header-bottom div:last-child {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -129,13 +190,13 @@ body {
     padding: 10px 15px 10px 15px;
     box-shadow: 0px 5px 15px 0px rgba(39, 48, 112, 0.51);
   }
-  .menu-hamburguer-right{
+  .menu-hamburguer-right {
     background-color: #ffffff;
     border: 1px solid gray;
     border-radius: 0.2rem;
     width: 5em;
     padding: 0.2rem 1rem;
     height: 2.7em;
-    margin-left: 1em;  
+    margin-left: 1em;
   }
 }
