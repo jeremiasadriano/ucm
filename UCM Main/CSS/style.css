@@ -274,6 +274,95 @@ header {
 /*SECTIONS */
 
 /* Conheca ucm */
+#conheca-ucm{
+  border-top: none;
+  padding-top: 50px 15px 0 15px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#top{
+  padding: 10px;
+  position: relative;
+  width: 100%;
+}
+
+ #conheca{
+  text-align: center;
+  color: #151C60;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 45px;
+  letter-spacing: 1.2px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#formar{
+  padding: 2% 12%;
+  color: #595858;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  margin: 0px 0px 20px;
+  text-align: center;
+}
+#img-3{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 30px 0 40px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.card {
+  box-sizing: border-box;
+  display: inline-block;
+  animation-name: fadeInUp;
+  animation-duration: 1.25;
+  width: 33.33;
+  vertical-align: middle;
+}
+
+.h3-down a{
+  padding: 0;
+  margin: 0;
+  color: #1c2122;
+  font-family: "Bellefair", sans-serif;
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 1.231em;
+  letter-spacing: 0px;
+  text-decoration: none;
+  box-shadow: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.img-card{
+  vertical-align: middle;
+  display: inline-block;
+  border-radius: 0px;
+  max-width: 100%;
+  height: auto;
+  border: none;
+  box-shadow: none;
+}
+
+.down-div{
+  background: rgba(242, 242, 241, 100);
+  position: relative;
+  display: flex;
+  padding: 26px 40px 43px 50px;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+#left, #center{
+}
 
 /* Investigacao */
 
