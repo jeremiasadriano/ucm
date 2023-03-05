@@ -79,7 +79,7 @@ header .nav-bar nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: normal;
 }
 
@@ -116,7 +116,7 @@ section .ucm-icon img {
 section .ucm-icon p {
   display: block;
   text-align: center;
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 /* hr geral, modifica todos os hr's existentes na pagina*/
@@ -190,7 +190,7 @@ section.noticia h5 {
 section:has(.noticia-texto) p {
   display: block;
   margin: 8px 0px 0px 42px;
-  font-size: 14px;
+  font-size: 0.9375rem;
   font-style: italic;
   color: #33373ac4;
   text-align: justify;
@@ -205,11 +205,10 @@ section:has(.noticia-texto) img {
 
 /* Footer */
 footer {
-  display: block;
-  position: absolute;
-  top: 74%;
+  position: fixed;
+  bottom: 0;
   width: 100vw;
-  height: 265px;
+  height: 16.5625rem;
   margin: auto;
   background-color: var(--azul);
 }
@@ -225,7 +224,7 @@ footer .nav-footer th {
   text-align: left;
   color: white;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   padding-left: 50px;
   padding-top: 10px;
@@ -233,7 +232,7 @@ footer .nav-footer th {
 /* Aqui também alteramos a cor servico online text */
 footer .nav-footer td {
   color: var(--cordoHRdoFooter);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   width: 10%;
   padding-left: 50px;
@@ -294,5 +293,11 @@ div:has(.copyright) p {
   margin: auto;
   width: 60%;
   color: var(--cordoHRdoFooter);
-  font-size: 14px;
+  font-size: 0.875rem;
 }
+
+/* display: flex inline block inline-block */
+/* justify-content: space-between space-around center space-evenly  
+  aligin-items:
+*/
+/* flex-direction: columm */
