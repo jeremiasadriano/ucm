@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+:root {
+  --azulDaSectionInvestigacao: #151c60;
+}
 * {
   margin: 0;
   padding: 0;
@@ -275,7 +278,7 @@ header {
 /*SECTIONS */
 
 /* Conheca ucm */
-#conheca-ucm{
+#conheca-ucm {
   border-top: none;
   padding-top: 50px 15px 0 15px;
   width: 100%;
@@ -283,15 +286,15 @@ header {
   margin-left: auto;
 }
 
-#top{
+#top {
   padding: 10px;
   position: relative;
   width: 100%;
 }
 
- #conheca{
+#conheca {
   text-align: center;
-  color: #151C60;
+  color: #151c60;
   font-family: "Playfair Display", sans-serif;
   font-size: 45px;
   letter-spacing: 1.2px;
@@ -299,7 +302,7 @@ header {
   position: relative;
 }
 
-#formar{
+#formar {
   padding: 2% 12%;
   color: #595858;
   font-size: 18px;
@@ -308,7 +311,7 @@ header {
   margin: 0px 0px 20px;
   text-align: center;
 }
-#img-3{
+#img-3 {
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 30px 0 40px 0;
@@ -326,7 +329,7 @@ header {
   vertical-align: middle;
 }
 
-.h3-down a{
+.h3-down a {
   padding: 0;
   margin: 0;
   color: #1c2122;
@@ -341,7 +344,7 @@ header {
   text-align: center;
 }
 
-.img-card{
+.img-card {
   vertical-align: middle;
   display: inline-block;
   border-radius: 0px;
@@ -351,7 +354,7 @@ header {
   box-shadow: none;
 }
 
-.down-div{
+.down-div {
   background: rgba(242, 242, 241, 100);
   position: relative;
   display: flex;
@@ -363,7 +366,7 @@ header {
 }
 /* Conheca a UCM */
 /* Conheca ucm */
-#conheca-ucm{
+#conheca-ucm {
   border-top: none;
   padding-top: 50px 15px 0 15px;
   width: 100%;
@@ -371,15 +374,15 @@ header {
   margin-left: auto;
 }
 
-#top{
+#top {
   padding: 10px;
   position: relative;
   width: 100%;
 }
 
- #conheca{
+#conheca {
   text-align: center;
-  color: #151C60;
+  color: #151c60;
   font-family: "Playfair Display", sans-serif;
   font-size: 45px;
   letter-spacing: 1.2px;
@@ -387,7 +390,7 @@ header {
   position: relative;
 }
 
-#formar{
+#formar {
   padding: 2% 12%;
   color: #595858;
   font-size: 18px;
@@ -396,7 +399,7 @@ header {
   margin: 0px 0px 20px;
   text-align: center;
 }
-#img-3{
+#img-3 {
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 30px 0 40px 0;
@@ -414,7 +417,7 @@ header {
   vertical-align: middle;
 }
 
-.h3-down a{
+.h3-down a {
   padding: 0;
   margin: 0;
   color: #1c2122;
@@ -429,7 +432,7 @@ header {
   text-align: center;
 }
 
-.img-card{
+.img-card {
   vertical-align: middle;
   display: inline-block;
   border-radius: 0px;
@@ -439,7 +442,7 @@ header {
   box-shadow: none;
 }
 
-.down-div{
+.down-div {
   background: rgba(242, 242, 241, 100);
   position: relative;
   display: flex;
@@ -468,7 +471,7 @@ section#investigacao .bg-investigacao {
   /* Essa div é inutil ok? mas não apaguem */
 }
 /* A div de textos que contem todo o conteudo do site */
-:is(section) .textos-investigacao {
+section#investigacao .textos-investigacao {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -479,27 +482,27 @@ section#investigacao .bg-investigacao {
   margin-top: 15%;
   font-size: 1.4rem;
 }
-:is(section) .textos-investigacao h1 {
+section#investigacao .textos-investigacao h1 {
   font-size: 3rem;
   font-weight: 600;
 }
-:is(section) .textos-investigacao h3 {
+section#investigacao .textos-investigacao h3 {
   font-size: 1.5rem;
   font-weight: 100;
   margin-right: 18rem;
   margin-bottom: 1rem;
 }
-:is(section) .textos-investigacao h1,
+section#investigacao .textos-investigacao h1,
 h3 {
   margin-right: 15rem;
 }
-:is(section) .textos-investigacao p {
+section#investigacao .textos-investigacao p {
   letter-spacing: 1px;
   font-weight: 100;
   font-size: 1.4rem;
   margin: 0 1.5em;
 }
-:is(section) .imagens-investigacao {
+section#investigacao .imagens-investigacao {
   position: relative;
   display: flex;
   justify-content: center;
@@ -512,20 +515,20 @@ div:has(.imagens-investigacao) img {
   bottom: -168px;
   display: flex;
 }
-:is(section) .imagens-investigacao img:first-child {
+section#investigacao .imagens-investigacao img:first-child {
   width: 29%;
 }
-:is(section) .imagens-investigacao img:last-child {
+section#investigacao .imagens-investigacao img:last-child {
   position: absolute;
   width: 25%;
   top: -244px;
   left: 69%;
   transform: scale(0.9);
 }
-:is(section) .imagens-investigacao a img {
+section#investigacao .imagens-investigacao a img {
   z-index: 2;
 }
-:is(section) button {
+section#investigacao button {
   display: block;
   margin-top: 3rem;
   margin-right: 32.1rem;
