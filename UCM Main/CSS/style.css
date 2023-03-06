@@ -468,7 +468,6 @@ section#investigacao {
 section#investigacao .bg-investigacao {
   width: 100vw;
   height: 90vh;
-  /* Essa div é inutil ok? mas não apaguem */
 }
 /* A div de textos que contem todo o conteudo do site */
 section#investigacao .textos-investigacao {
@@ -489,11 +488,10 @@ section#investigacao .textos-investigacao h1 {
 section#investigacao .textos-investigacao h3 {
   font-size: 1.5rem;
   font-weight: 100;
-  margin-right: 18rem;
+  margin-right: 18.5rem;
   margin-bottom: 1rem;
 }
-section#investigacao .textos-investigacao h1,
-h3 {
+section:has(.textos-investigacao) h1 {
   margin-right: 15rem;
 }
 section#investigacao .textos-investigacao p {
