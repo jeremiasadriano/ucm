@@ -1,6 +1,5 @@
 /* Generals configuration*/
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&family=Bellefair&family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 :root {
   --azulDaSectionInvestigacao: #151c60;
@@ -92,11 +91,27 @@ header {
   text-transform: uppercase;
 }
 
-.nav-topics li > span {
-  color: black;
-  font-size: 15px;
-  margin-bottom: 800px;
-  margin-left: 6px;
+.nav-topics li {
+  margin-right: 1rem;
+}
+
+.nav-topics li > a{
+  text-decoration: none;
+}
+
+.nav-topics li > button {
+  width: 1rem;
+  height: 1rem;
+  margin: 0.2rem;
+  border: none;
+  align-items: center;
+  background-color: transparent;
+  background-image: url("../img/down-arrow.png");
+  background-size: contain;
+}
+
+.empty-btn {
+  padding-top: 0.2rem;
 }
 
 .nav-topics li:not(:last-child) {
@@ -137,9 +152,15 @@ header {
   border-color: #273070;
 }
 
-.open-btn {
-  height: 10px;
-  width: 10px;
+.openbtn {
+  height: 1.7rem;
+  width: 2rem;
+  background-color: transparent;
+  background-image: url("../img/menu-hamburguer-button.png");
+  background-size: contain;
+  border: 1px solid #eaebf1;
+  align-items: center;
+  justify-content: center;
 }
 
 /*--------------------------*/
@@ -484,9 +505,12 @@ section#investigacao button {
   margin: 2em 0 1em 0;
 }
 
-#bibliotecas_horários div p:first-child {
+#bibliotecas_horários div p {
   font-family: "Poppins", Sans-serif;
   line-height: 1.8;
+}
+
+#bibliotecas_horários div p:first-child {
   margin: 0 0 20px;
   word-wrap: break-word;
 }
