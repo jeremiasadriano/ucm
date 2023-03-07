@@ -97,6 +97,13 @@ header {
 
 .nav-topics li > a {
   text-decoration: none;
+  color: #273171;
+}
+
+.nav-topics li > a:visited,
+.nav-topics li > a:active,
+.nav-topics li > a:hover{
+  color: #273171;
 }
 
 .nav-topics li > button {
