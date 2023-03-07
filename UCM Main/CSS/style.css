@@ -244,10 +244,10 @@ header {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .links-slideshow a{
-  text-transform: uppercase;
   color: #5866de;
   font-size: 13px;
   margin-right: 4px;
@@ -260,6 +260,7 @@ header {
   word-wrap: break-word;
   width: 65%;
   margin-bottom: 1rem;
+  line-height: 1.4;
 }
 
 .text p {
