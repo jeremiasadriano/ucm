@@ -268,3 +268,55 @@ footer .media{
     margin-left: 30px;
     margin-right: -25px;
 }
+
+@media screen and (max-width: 1366px){
+    h1 {
+        font-size: 1.2em;
+        float: left;
+        padding: 0;
+        color: #00055C;
+        display: block;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    
+    #login {
+        width: 232px;
+        margin-left: 2em;
+    }
+
+     #down p, #down a{
+        margin-bottom: 1px;
+        margin-top: 1px;
+     }
+
+     #down h2{
+        width: 100%;
+        border-bottom: 0.05em solid #00055C;
+        margin-top: 10px;
+        margin-bottom: 0.5em;
+        padding-bottom: 0.5em;
+     }
+
+     #up-right{
+        overflow: auto;
+        height:288px;
+    }
+    
+    #bottom-right{
+        overflow-y: hidden;
+        height: 250px;
+    }
+    #bottom-right h2{
+        margin-bottom: 1px;
+    }
+    .noticias h3{
+        margin-top: 0;
+    }
+    .p-up{
+        margin-top: 0;
+        margin-bottom: 0;
+       }
+}
