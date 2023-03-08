@@ -302,14 +302,20 @@ footer .media{
 
      #up-right{
         overflow: auto;
-        height:288px;
+        height:248px;
+    }
+
+    #up-right h2{
+        margin-top: -25px;
     }
     
     #bottom-right{
         overflow-y: hidden;
-        height: 250px;
+        height: 240px;
     }
+
     #bottom-right h2{
+        margin-top: -15px;
         margin-bottom: 1px;
     }
     .noticias h3{
