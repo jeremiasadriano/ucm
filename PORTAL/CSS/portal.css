@@ -233,7 +233,7 @@ footer #f-left p{
 
 footer #f-right {
     float: right;
-    padding: 1em 10%;
+    padding: 5px 10% 15px 10%;
 }
 
 footer #f-right p {

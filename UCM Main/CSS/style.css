@@ -1,5 +1,5 @@
 /* Generals configuration*/
-@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;700&family=Bellefair&family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&family=Bellefair&family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700&family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 :root {
   --azulDaSectionInvestigacao: #151c60;
@@ -114,7 +114,7 @@ header {
   border: none;
   align-items: center;
   background-color: transparent;
-  background-image: url("../img/down-arrow.png");
+  background-image: url("../img/Biblioteca/down-arrow.png");
   background-size: contain;
 }
 
@@ -164,7 +164,7 @@ header {
   height: 1.7rem;
   width: 2rem;
   background-color: transparent;
-  background-image: url("../img/menu-hamburguer-button.png");
+  background-image: url("../img/Biblioteca/menu-hamburguer-button.png");
   background-size: contain;
   border: 1px solid #eaebf1;
   align-items: center;
@@ -499,6 +499,7 @@ section#investigacao .textos-investigacao h3 {
   font-weight: 100;
   margin-right: 18.5rem;
   margin-bottom: 1rem;
+  color: #DFDADA;
 }
 section:has(.textos-investigacao) h1 {
   margin-right: 15rem;
@@ -522,9 +523,11 @@ div:has(.imagens-investigacao) img {
   bottom: -168px;
   display: flex;
 }
+
 section#investigacao .imagens-investigacao img:first-child {
   width: 29%;
 }
+
 section#investigacao .imagens-investigacao img:last-child {
   position: absolute;
   width: 25%;
@@ -532,14 +535,32 @@ section#investigacao .imagens-investigacao img:last-child {
   left: 69%;
   transform: scale(0.9);
 }
+
 section#investigacao .imagens-investigacao a img {
   z-index: 2;
 }
+
 section#investigacao button {
   display: block;
   margin-top: 3rem;
   margin-right: 32.1rem;
   padding: 10px 10px;
+  color: rgb(27, 37, 86);
+  background-color: #fff;
+  border:none;
+  font-family: "Raleway", Sans-serif;
+}
+
+#play-button{
+  position: absolute;
+  width: 100%;
+
+}
+
+#play{
+  margin-top: 50px;
+  height: 144px;
+  padding: 0 6.2em;
 }
 
 /* Biblioteca */
