@@ -390,9 +390,9 @@ div:has(.copyright) p {
     display: block;
     margin: auto;
     width: 71%;
-    height: 37%;
+    height: 39%;
     position: absolute;
-    top: 16%;
+    top: 18%;
     z-index: 1;
   }
   /* Imagem da UCM */
@@ -459,7 +459,7 @@ div:has(.copyright) p {
   section.noticia {
     display: block;
     position: absolute;
-    top: 56%;
+    top: 58%;
     margin: auto;
     width: 71%;
     height: 27%;
@@ -496,7 +496,7 @@ div:has(.copyright) p {
   footer {
     display: block;
     position: absolute;
-    top: 102%;
+    top: 106%;
     width: 100vw;
     height: 16.5625rem;
     bottom: 0;
