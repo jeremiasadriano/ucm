@@ -23,7 +23,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  overflow: hidden;
 }
 /* header */
 header {
@@ -72,7 +71,7 @@ header .nav-bar nav ul .nav-bar-right {
 header .nav-bar nav ul li {
   padding: 8px;
   margin: -30px;
-  padding-left: 5px;
+  padding-left: 42px;
 }
 header .nav-bar nav ul li a {
   margin: 40px;
@@ -298,9 +297,8 @@ div:has(.copyright) p {
 
 /* Deixar o site responsivo */
 
-@media screen and (max-width: 1366px) {
+@media (max-width: 1366px) {
   body {
-    position: relative;
     width: 100vw;
     height: 100vh;
     font-family: var(--fonte);
@@ -313,27 +311,25 @@ div:has(.copyright) p {
   }
   /* header */
   header {
-    position: relative;
+    top: 0%;
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: 85px;
-    top: 0%;
     background-color: var(--azul);
-    /* overflow-x: hidden; */
   }
   header .titulos .title {
     display: flex;
     justify-content: space-evenly;
-    gap: 49%;
+    gap: 30%;
     align-items: center;
   }
   header .titulos .title img {
     display: flex;
     height: 75px;
+    margin: 0;
   }
   header .titulos .title h1 {
-    border: 2px solid #b94237;
     font-size: 12px;
   }
   header .titulos .title a {
@@ -341,6 +337,7 @@ div:has(.copyright) p {
     color: white;
     font-size: 15px;
     font-weight: normal;
+    margin: 0;
   }
   header .nav-bar nav {
     display: flex;
@@ -395,7 +392,7 @@ div:has(.copyright) p {
     width: 71%;
     height: 37%;
     position: absolute;
-    top: 17%;
+    top: 16%;
     z-index: 1;
   }
   /* Imagem da UCM */
@@ -498,11 +495,11 @@ div:has(.copyright) p {
   /* Footer */
   footer {
     display: block;
-    position: fixed;
-    top: 78%;
+    position: absolute;
+    top: 102%;
     width: 100vw;
     height: 16.5625rem;
-    margin: auto;
+    bottom: 0;
     background-color: var(--azul);
   }
   /* Centralizando o footer */
@@ -587,6 +584,6 @@ div:has(.copyright) p {
     width: 72%;
     color: var(--cordoHRdoFooter);
     font-size: 0.875rem;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
   }
 }
