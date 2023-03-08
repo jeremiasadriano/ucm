@@ -13,6 +13,7 @@
 body {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 button {
@@ -374,6 +375,37 @@ header {
   margin: 0px 0px 20px;
   text-align: center;
 }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  50%{ opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  50%{ opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  50%{ opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  50%{ opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  50%{ opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
 #img-3 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -383,11 +415,13 @@ header {
   justify-content: center;
   gap: 16px;
 }
+
 .card {
   box-sizing: border-box;
   display: inline-block;
-  animation-name: fadeInUp;
-  animation-duration: 1.25;
+  animation-name: fadeIn;
+  animation-duration: 3;
+  animation: fadeIn 3s;
   width: 33.33;
   vertical-align: middle;
 }
