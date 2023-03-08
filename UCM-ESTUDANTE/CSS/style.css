@@ -298,22 +298,7 @@ div:has(.copyright) p {
 
 /* Deixar o site responsivo */
 
-@media only screen and(max-width: 1366) {
-  :root {
-    --azul: #233d7d;
-    --navcolor: #343a40;
-    --red: #cd3f31;
-    --fonte: "Calibri", sans-serif;
-    --section: #f1f2f2e8;
-    --textoSection: #33373a;
-    --cordoHRdoFooter: rgba(248, 248, 255, 0.425);
-    --hrcolor: rgba(248, 248, 255, 0.205);
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+@media screen and (max-width: 1366px) {
   body {
     position: relative;
     width: 100vw;
@@ -324,32 +309,38 @@ div:has(.copyright) p {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow: hidden;
+    overflow-x: hidden !important;
   }
   /* header */
   header {
+    position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     height: 85px;
+    top: 0%;
     background-color: var(--azul);
+    /* overflow-x: hidden; */
   }
   header .titulos .title {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 49%;
     align-items: center;
   }
   header .titulos .title img {
     display: flex;
     height: 75px;
-    margin-left: 400px;
+  }
+  header .titulos .title h1 {
+    border: 2px solid #b94237;
+    font-size: 12px;
   }
   header .titulos .title a {
     text-decoration: none;
     color: white;
     font-size: 15px;
     font-weight: normal;
-    margin-right: 410px;
   }
   header .nav-bar nav {
     display: flex;
@@ -380,7 +371,7 @@ div:has(.copyright) p {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    font-size: 0.875rem;
+    font-size: 0.92rem;
     font-weight: normal;
   }
 
@@ -401,10 +392,10 @@ div:has(.copyright) p {
   section.section1 {
     display: block;
     margin: auto;
-    width: 60%;
-    height: 29%;
+    width: 71%;
+    height: 37%;
     position: absolute;
-    top: 14%;
+    top: 17%;
     z-index: 1;
   }
   /* Imagem da UCM */
@@ -471,10 +462,10 @@ div:has(.copyright) p {
   section.noticia {
     display: block;
     position: absolute;
-    top: 44%;
+    top: 56%;
     margin: auto;
-    width: 60%;
-    height: 20%;
+    width: 71%;
+    height: 27%;
     /* top: 20%; */
     /* border: 2px solid var(--main); */
     z-index: 1;
@@ -491,9 +482,9 @@ div:has(.copyright) p {
   section:has(.noticia-texto) p {
     display: block;
     margin: 8px 0px 0px 42px;
-    font-size: 0.9375rem;
+    font-size: 14px;
     font-style: italic;
-    color: #33373ac4;
+    color: #000;
     text-align: justify;
   }
   section:has(.noticia-texto) p a {
@@ -506,8 +497,9 @@ div:has(.copyright) p {
 
   /* Footer */
   footer {
+    display: block;
     position: fixed;
-    bottom: 0;
+    top: 78%;
     width: 100vw;
     height: 16.5625rem;
     margin: auto;
@@ -517,7 +509,7 @@ div:has(.copyright) p {
   footer table {
     display: block;
     margin: auto;
-    width: 60%;
+    width: 73%;
     /* border: 3px #b94237 solid; */
   }
   footer .nav-footer th {
@@ -527,7 +519,7 @@ div:has(.copyright) p {
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 600;
-    padding-left: 50px;
+    padding-left: 60px;
     padding-top: 10px;
   }
   /* Aqui também alteramos a cor servico online text */
@@ -570,7 +562,7 @@ div:has(.copyright) p {
   /* Icons do servico online no footer */
   div:has(.icons) a img {
     background-color: white;
-    margin: 15px 10px 0px 0px;
+    margin: 15px 0px 0px 0px;
     border-radius: 5px;
     padding: 3px;
     z-index: 1 !important;
@@ -584,16 +576,17 @@ div:has(.copyright) p {
   :is(footer) hr {
     border-width: 0;
     background-color: var(--hrcolor);
-    width: 60%;
-    margin: 12px auto 2px auto;
+    width: 72%;
+    margin: 15px auto 2px auto;
   }
 
   /* Copyright */
   div:has(.copyright) p {
     display: block;
     margin: auto;
-    width: 60%;
+    width: 72%;
     color: var(--cordoHRdoFooter);
     font-size: 0.875rem;
+    padding-bottom: 60px;
   }
 }
