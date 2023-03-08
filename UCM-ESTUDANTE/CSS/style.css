@@ -297,3 +297,303 @@ div:has(.copyright) p {
 }
 
 /* Deixar o site responsivo */
+
+@media only screen and(max-width: 1366) {
+  :root {
+    --azul: #233d7d;
+    --navcolor: #343a40;
+    --red: #cd3f31;
+    --fonte: "Calibri", sans-serif;
+    --section: #f1f2f2e8;
+    --textoSection: #33373a;
+    --cordoHRdoFooter: rgba(248, 248, 255, 0.425);
+    --hrcolor: rgba(248, 248, 255, 0.205);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--fonte);
+    background-image: url("../img/bodyimage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+  }
+  /* header */
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85px;
+    background-color: var(--azul);
+  }
+  header .titulos .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .titulos .title img {
+    display: flex;
+    height: 75px;
+    margin-left: 400px;
+  }
+  header .titulos .title a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    margin-right: 410px;
+  }
+  header .nav-bar nav {
+    display: flex;
+    background-color: var(--navcolor);
+    height: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header .nav-bar nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  header .nav-bar nav ul .nav-bar-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 55px;
+  }
+  header .nav-bar nav ul li {
+    padding: 8px;
+    margin: -30px;
+    padding-left: 5px;
+  }
+  header .nav-bar nav ul li a {
+    margin: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: normal;
+  }
+
+  /* Main */
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Definindo propriedades gerais para as section */
+  :is(section) {
+    color: var(--textoSection);
+    background-color: var(--section);
+  }
+
+  /* Section 1 da main */
+  section.section1 {
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 29%;
+    position: absolute;
+    top: 14%;
+    z-index: 1;
+  }
+  /* Imagem da UCM */
+  section .ucm-icon img {
+    display: block;
+    margin: auto;
+    width: 130px;
+  }
+  /* O texto de boas vindas da ucm com hr*/
+  section .ucm-icon p {
+    display: block;
+    text-align: center;
+    font-size: 0.9375rem;
+  }
+
+  /* hr geral, modifica todos os hr's existentes na pagina*/
+  hr {
+    display: block;
+    margin: 12px auto;
+    background-color: var(--navcolor);
+    height: 1px;
+    border-width: 0;
+    width: 95%;
+  }
+  /* abbr */
+  section .butao-red abbr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 19px;
+    cursor: help;
+  }
+  section button {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--red);
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: ease-in 0.2s;
+  }
+  section button:hover {
+    background-color: #b94237;
+  }
+  section button a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* A div responsável por todo o conteúdo do site */
+  #content {
+    display: block;
+    margin-top: 12px;
+    z-index: 1 !important;
+  }
+
+  /* Section 2  da main*/
+  section.noticia {
+    display: block;
+    position: absolute;
+    top: 44%;
+    margin: auto;
+    width: 60%;
+    height: 20%;
+    /* top: 20%; */
+    /* border: 2px solid var(--main); */
+    z-index: 1;
+  }
+
+  /* O h5 da segunda section */
+  section.noticia h5 {
+    display: block;
+    font-size: 15px;
+    margin: 10px 0px 0px 29px;
+  }
+
+  /* Alterando os p da section com a class noticia-texto */
+  section:has(.noticia-texto) p {
+    display: block;
+    margin: 8px 0px 0px 42px;
+    font-size: 0.9375rem;
+    font-style: italic;
+    color: #33373ac4;
+    text-align: justify;
+  }
+  section:has(.noticia-texto) p a {
+    color: #33373ac4;
+    text-decoration: none;
+  }
+  section:has(.noticia-texto) img {
+    height: 14px;
+  }
+
+  /* Footer */
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 16.5625rem;
+    margin: auto;
+    background-color: var(--azul);
+  }
+  /* Centralizando o footer */
+  footer table {
+    display: block;
+    margin: auto;
+    width: 60%;
+    /* border: 3px #b94237 solid; */
+  }
+  footer .nav-footer th {
+    font-family: sans-serif;
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 50px;
+    padding-top: 10px;
+  }
+  /* Aqui também alteramos a cor servico online text */
+  footer .nav-footer td {
+    color: var(--cordoHRdoFooter);
+    font-size: 1rem;
+    font-weight: 400;
+    width: 10%;
+    padding-left: 50px;
+  }
+  footer .nav-footer th:first-child {
+    padding-left: 10px;
+  }
+  footer .nav-footer td:first-child {
+    padding-left: 10px;
+  }
+  footer .nav-footer td:last-child {
+    padding-top: 12px;
+  }
+
+  footer .nav-footer td ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  footer .nav-footer td ul li {
+    color: white;
+    padding-top: 4px;
+    text-align: justify;
+  }
+  footer .nav-footer td ul li a {
+    color: white;
+    text-decoration: none;
+    transition: ease-in 0.2s;
+  }
+  footer .nav-footer td ul li a:hover {
+    color: rgba(0, 183, 255, 0.253);
+  }
+
+  /* Icons do servico online no footer */
+  div:has(.icons) a img {
+    background-color: white;
+    margin: 15px 10px 0px 0px;
+    border-radius: 5px;
+    padding: 3px;
+    z-index: 1 !important;
+    transition: ease-in 0.2s;
+  }
+  div:has(.icons) a img:hover {
+    background-color: rgba(0, 0, 255, 0.418);
+  }
+
+  /* hr do footer */
+  :is(footer) hr {
+    border-width: 0;
+    background-color: var(--hrcolor);
+    width: 60%;
+    margin: 12px auto 2px auto;
+  }
+
+  /* Copyright */
+  div:has(.copyright) p {
+    display: block;
+    margin: auto;
+    width: 60%;
+    color: var(--cordoHRdoFooter);
+    font-size: 0.875rem;
+  }
+}
