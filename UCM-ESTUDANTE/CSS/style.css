@@ -62,11 +62,11 @@ header .nav-bar nav ul {
   align-items: center;
   list-style: none;
 }
-header .nav-bar nav ul .nav-bar-right {
+header .nav-bar nav ul li:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 55px;
+  margin-right: 51px;
 }
 header .nav-bar nav ul li {
   padding: 8px;
